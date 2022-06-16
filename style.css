@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nuosu+SIL&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+/* or here we can also use span */
+#spotifytext {
+    font-family: 'Varela+Round';
+    color: white;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    display: flex;
+    border-radius: 12px;
+    padding: 34px;
+    margin: 23px auto;
+    width: 70%;
+    background-image: url('/images/bg.jpg');
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 80px;
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    height: 6px;
+    cursor: pointer;
+}
+
+.songItems {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItems img {
+    width: 36px;
+    margin: 0 23px;
+}
+
+.songItems span {
+    display: flex;
+    padding: 0 8px;
+    align-items: flex-start;
+}
+
+.songlistplay {
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 70px;
+}
+
+.songInfo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    left: 10vw;
+}
+
+.songInfo img {
+    font-family: 'Montserrat', 'sans-serif';
+    opacity: 0;
+    transform: opacity 0.8s ease-in;
+}
